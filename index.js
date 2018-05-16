@@ -6,6 +6,7 @@ function getRepositories() {
 }
 
 function showRepositories(event, data) {
+  var repos = JSON.parse(this.responseText)
   console.log(this.responseText)
   let repoList = "<ul>"
   for( var i=0;i < this.responseText.length; i++) {
